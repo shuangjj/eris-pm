@@ -1,0 +1,98 @@
+jobs: 
+  - name: deploy0
+    job:
+      deploy:
+        contract: app30.sol
+        wait: true
+  
+  - name: queryInts
+    job:
+      query-contract:
+        destination: $deploy0
+        data: getInts
+        
+  - name: intsValue
+    job:
+      set:
+        val: (1, 2)
+  
+  - name: assertInts
+    job:
+      assert:
+        key: $queryInts
+        relation: eq
+        val: $intsValue
+
+  - name: queryStrings
+    job:
+      query-contract:
+        destination: $deploy0
+        data: getStrings
+
+  - name: stringsValue
+    job:
+      set:
+        val: ("PlansForWorldDomination.md", "DougTheMarmot")
+
+  - name: assertStrings
+    job:
+      assert:
+        key: $queryStrings
+        relation: eq
+        val: $stringsValue
+
+  - name: queryBools
+    job:
+      query-contract:
+        destination: $deploy0
+        data: getBools
+
+  - name: boolsValue
+    job:
+      set:
+        val: (true, false)
+
+  - name: assertBools
+    job:
+      assert:
+        key: $queryBools
+        relation: eq
+        val: $boolsValue
+
+  - name: queryBytes
+    job:
+      query-contract:
+        destination: $deploy0
+        data: getBytes
+
+  - name: bytesValue
+    job:
+      set:
+        val: ("Hello", "World")
+
+  - name: assertBytes
+    job:
+      assert:
+        key: $queryBytes
+        relation: eq
+        val: $bytesValue
+
+  - name: queryInterMixed
+    job:
+      query-contract:
+        destination: $deploy0
+        data: getInterMixed
+
+  - name: interMixedValue
+    job:
+      set:
+        val: ("PranksAndStuff.js", 3, true, "DougTheMarmot", "0x36PrZ1KHYMpqSyAQXSG8VwbUiq2EogxLo2")
+
+  - name: assertIntermixed
+    job:
+      assert:
+        key: $queryInterMixed
+        relation: eq
+        val: $interMixedValue
+
+
