@@ -10,8 +10,8 @@ import (
 
 	"github.com/eris-ltd/eris-pm/definitions"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/tendermint/wire"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/tendermint/wire"
 )
 
 const LogFileNameCSV = "epm.csv"

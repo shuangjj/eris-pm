@@ -6,8 +6,8 @@ import (
 
 	"github.com/eris-ltd/eris-pm/definitions"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/spf13/viper"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/spf13/viper"
 )
 
 func LoadPackage(fileName string) (*definitions.Package, error) {

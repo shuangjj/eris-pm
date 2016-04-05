@@ -10,10 +10,10 @@ import (
 
 	"github.com/eris-ltd/eris-pm/definitions"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/common/go/common"
-	ebi "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/eris-abi/core"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/mint-client/mintx/core"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/common/go/common"
+	ebi "github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/eris-abi/core"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/mint-client/mintx/core"
 )
 
 // This is a closer function which is called by most of the tx_run functions

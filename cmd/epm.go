@@ -11,11 +11,11 @@ import (
 	"github.com/eris-ltd/eris-pm/util"
 	"github.com/eris-ltd/eris-pm/version"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	. "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/common/go/common"
-	logger "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/common/go/log"
-	cfg "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/tendermint/config"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/spf13/cobra"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	. "github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/common/go/common"
+	logger "github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/common/go/log"
+	cfg "github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/tendermint/config"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/spf13/cobra"
 )
 
 const VERSION = version.VERSION

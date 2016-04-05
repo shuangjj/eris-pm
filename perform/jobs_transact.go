@@ -9,9 +9,9 @@ import (
 	"github.com/eris-ltd/eris-pm/definitions"
 	"github.com/eris-ltd/eris-pm/util"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/mint-client/mintx/core"
-	"github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/tendermint/types"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/mint-client/mintx/core"
+	"github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/tendermint/types"
 )
 
 func SendJob(send *definitions.Send, do *definitions.Do) (string, error) {

@@ -9,8 +9,8 @@ import (
 
 	"github.com/eris-ltd/eris-pm/definitions"
 
-	log "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	cclient "github.com/eris-ltd/eris-pm/Godeps/_workspace/src/github.com/eris-ltd/tendermint/rpc/core_client"
+	log "github.com/eris-ltd/eris-pm/vendor/github.com/Sirupsen/logrus"
+	cclient "github.com/eris-ltd/eris-pm/vendor/github.com/eris-ltd/tendermint/rpc/core_client"
 )
 
 func ChainStatus(field string, do *definitions.Do) (string, error) {
