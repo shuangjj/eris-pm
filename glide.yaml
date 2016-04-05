@@ -1,0 +1,200 @@
+package: github.com/eris-ltd/eris-pm
+import:
+- package: github.com/BurntSushi/toml
+  version: 443a628bc233f634a75bcbdd71fe5350789f1afa
+- package: github.com/Sirupsen/logrus
+  version: 57cce1ed6103dce7791881d3e69e55f90d986aa5
+- package: github.com/agl/ed25519
+  version: d2b94fd789ea21d12fac1a4443dd3a3f79cda72c
+  subpackages:
+  - edwards25519
+- package: github.com/armon/consul-api
+  version: dcfedd50ed5334f96adee43fc88518a4f095e15c
+- package: github.com/codegangsta/inject
+  version: 4b8172520a03fa190f427bbd284db01b459bfce7
+- package: github.com/coreos/go-etcd
+  version: 73a8ef737e8ea002281a28b4cb92a1de121ad4c6
+  subpackages:
+  - etcd
+- package: github.com/cpuguy83/go-md2man
+  version: 71acacd42f85e5e82f70a55327789582a5200a90
+  subpackages:
+  - md2man
+- package: github.com/ebuchman/go-shell-pipes
+  version: 83e1324808622485314bff0fd97b8b944200a7a4
+- package: github.com/eris-ltd/common
+  version: 599e2b5057345680c99510c216d8feb0c98e2724
+  subpackages:
+  - go/common
+  - go/log
+- package: github.com/eris-ltd/eris-abi
+  version: 0f2c5c39a451bb4f2c9e18ad4ac0c0222f943512
+  subpackages:
+  - abi
+  - core
+- package: github.com/eris-ltd/eris-compilers
+  version: 03d69c340047dc8ccb549e789cfa296aece4d39d
+- package: github.com/eris-ltd/eris-keys
+  version: 6b4aa3de4b73222d2b06c3c8c258ddf1a74faaae
+  subpackages:
+  - crypto
+  - crypto/ed25519
+  - crypto/randentropy
+  - crypto/secp256k1
+  - crypto/sha3
+  - eris-keys
+- package: github.com/eris-ltd/mint-client
+  version: 93acdc93b5b9c05125d95d905950291f386197e9
+  subpackages:
+  - mintx/core
+  - utils
+- package: github.com/eris-ltd/tendermint
+  version: b0c1ee2c3ad851cf4e7b9dc95c2e65559e5d447d
+  subpackages:
+  - account
+  - common
+  - config
+  - config/tendermint
+  - db
+  - logger
+  - merkle
+  - permission/types
+  - rpc/core/types
+  - rpc/core_client
+  - rpc/types
+  - state/types
+  - types
+  - wire
+- package: github.com/ethereum/go-ethereum
+  version: c541b38fb36587d23c60f5e2f2b9b3c8700ec489
+  subpackages:
+  - crypto/sha3
+- package: github.com/go-martini/martini
+  version: c657c03d1add219e93d48ffa493052c9a79c11b2
+- package: github.com/gorilla/websocket
+  version: a3ec486e6a7a41858210b0fc5d7b5df593b3c4a3
+- package: github.com/howeyc/gopass
+  version: 10b54de414cc9693221d5ff2ae14fd2fbf1b0ac1
+- package: github.com/inconshreveable/log15
+  version: 210d6fdc4d979ef6579778f1b6ed84571454abb4
+  subpackages:
+  - stack
+  - term
+- package: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- package: github.com/jehiah/go-strftime
+  version: 834e15c05a45371503440cc195bbd05c9a0968d9
+- package: github.com/kr/pretty
+  version: cb0850c1681cbca3233e84f7e6ec3e4c3f352085
+- package: github.com/kr/text
+  version: 6807e777504f54ad073ecef66747de158294b639
+- package: github.com/magiconair/properties
+  version: d5929c67198951106f49f7ea425198d0f1a08f7f
+- package: github.com/martini-contrib/gorelic
+  version: f8b0843aa3ab66d8734aa7d9acf399bdc197c65d
+- package: github.com/martini-contrib/secure
+  version: de8e19a0490b816696d093388d53f2e1f0c08b7d
+- package: github.com/mattn/go-colorable
+  version: d67e0b7d1797975196499f79bcc322c08b9f218b
+- package: github.com/mattn/go-isatty
+  version: fdbe02a1b44e75977b2690062b83cf507d70c013
+- package: github.com/mitchellh/go-homedir
+  version: df55a15e5ce646808815381b3db47a8c66ea62f4
+- package: github.com/mitchellh/mapstructure
+  version: 542b39186cdb2013d4acdf713d5e11671c2fe934
+- package: github.com/naoina/go-stringutil
+  version: 360db0db4b01d34e12a2ec042c09e7d37fece761
+- package: github.com/naoina/toml
+  version: 751171607256bb66e64c9f0220c00662420c38e9
+  subpackages:
+  - ast
+- package: github.com/rs/cors
+  version: 6e0c3cb65fc0fdb064c743d176a620e3ca446dfb
+- package: github.com/russross/blackfriday
+  version: 8cec3a854e68dba10faabbe31c089abf4a3e57a6
+- package: github.com/segmentio/analytics-go
+  version: 0f10a1942c812a6dc8b4978ed8a80cfc42e8a617
+- package: github.com/shurcooL/sanitized_anchor_name
+  version: 244f5ac324cb97e1987ef901a0081a77bfd8e845
+- package: github.com/spf13/cast
+  version: 2c4fdb5416dd394ff5e61fcdb8eb4f09e46a2ed8
+- package: github.com/spf13/cobra
+  version: 385fc87e4343efec233811d3d933509e8975d11a
+- package: github.com/spf13/jwalterweatherman
+  version: 3d60171a64319ef63c78bd45bd60e6eab1e75f8b
+- package: github.com/spf13/pflag
+  version: 67cbc198fd11dab704b214c1e629a97af392c085
+- package: github.com/spf13/viper
+  version: d62d4bb4c68a773c3b5f4e72844913a2d5de0de0
+- package: github.com/syndtr/goleveldb
+  version: 63c9e642efad852f49e20a6f90194cae112fd2ac
+  subpackages:
+  - leveldb
+  - leveldb/cache
+  - leveldb/comparer
+  - leveldb/errors
+  - leveldb/filter
+  - leveldb/iterator
+  - leveldb/journal
+  - leveldb/memdb
+  - leveldb/opt
+  - leveldb/storage
+  - leveldb/table
+  - leveldb/util
+- package: github.com/syndtr/gosnappy
+  version: 156a073208e131d7d2e212cb749feae7c339e846
+  subpackages:
+  - snappy
+- package: github.com/tendermint/ed25519
+  version: 533fb6548e2071076888eda3c38749d707ba49bc
+  subpackages:
+  - extra25519
+- package: github.com/tendermint/log15
+  version: 6e460758f10ef42a4724b8e4a82fee59aaa0e41d
+- package: github.com/wayn3h0/go-uuid
+  version: 1622016a49b50139b1ac263e6ef2804226b3dec6
+  subpackages:
+  - internal/dcesecurity
+  - internal/layout
+  - internal/namebased
+  - internal/namebased/md5
+  - internal/namebased/sha1
+  - internal/random
+  - internal/timebased
+  - internal/version
+- package: github.com/xordataexchange/crypt
+  version: 749e360c8f236773f28fc6d3ddfce4a470795227
+  subpackages:
+  - backend
+  - backend/consul
+  - backend/etcd
+  - config
+  - encoding/secconf
+- package: github.com/xtgo/uuid
+  version: a0b114877d4caeffbd7f87e3757c17fce570fea7
+- package: github.com/yvasiyarov/go-metrics
+  version: c25f46c4b94079672242ec48a545e7ca9ebe3aec
+- package: github.com/yvasiyarov/gorelic
+  version: 1c0ed4e38e62548df0051140795e569d35cf2ded
+- package: github.com/yvasiyarov/newrelic_platform_go
+  version: cef0ebd22fb48453114ba645d0fb80fea6e670de
+- package: golang.org/x/crypto
+  version: 1f22c0103821b9390939b6776727195525381532
+  subpackages:
+  - cast5
+  - openpgp
+  - openpgp/armor
+  - openpgp/elgamal
+  - openpgp/errors
+  - openpgp/packet
+  - openpgp/s2k
+  - pbkdf2
+  - ripemd160
+  - scrypt
+  - ssh/terminal
+- package: golang.org/x/sys
+  version: 5eaf0df67e70d6997a9fe0ed24383fa1b01638d3
+  subpackages:
+  - unix
+- package: gopkg.in/yaml.v2
+  version: 5d6f7e02b7cdad63b06ab3877915532cd30073b4
